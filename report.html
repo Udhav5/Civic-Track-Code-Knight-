@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head><title>Report Issue</title></head>
+<body>
+<h2>Report an Issue</h2>
+<form method="POST" enctype="multipart/form-data">
+  Title: <input type="text" name="title"><br>
+  Description: <textarea name="description"></textarea><br>
+  Category:
+  <select name="category">
+    <option>Roads</option>
+    <option>Lighting</option>
+    <option>Water Supply</option>
+    <option>Cleanliness</option>
+    <option>Public Safety</option>
+    <option>Obstructions</option>
+  </select><br>
+  Upload up to 3 images:
+  <input type="file" name="image1"><br>
+  <input type="file" name="image2"><br>
+  <input type="file" name="image3"><br>
+  Location: <input type="text" name="latitude" placeholder="Latitude" required>
+  <input type="text" name="longitude" placeholder="Longitude" required><br>
+  <label><input type="checkbox" name="anonymous"> Report anonymously</label><br>
+  <button type="submit">Submit</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<h2>Admin Panel</h2>
+<table border="1">
+<tr><th>ID</th><th>Title</th><th>Status</th><th>Category</th><th>Created At</th></tr>
+{% for issue in issues %}
+<tr>
+  <td>{{ issue[0] }}</td>
+  <td>{{ issue[1] }}</td>
+  <td>{{ issue[8] }}</td>
+  <td>{{ issue[3] }}</td>
+  <td>{{ issue[9] }}</td>
+</tr>
+{% endfor %}
+</table>
